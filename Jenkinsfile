@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo 'this is my first pipeline'
+                echo 'this is my second pipeline'
             }
         }
     }
