@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy to Remote'){
             steps{
-                sh 'scp -r stricthostkeychecking=no ${WORKSPACE}/* ubuntu@3.83.99.250:/var/www/html/'
+                sh 'scp -o stricthostkeychecking=no ${WORKSPACE}/* ubuntu@3.83.99.250:/var/www/html/'
                     }
         }
     }
